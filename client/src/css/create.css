@@ -1,0 +1,21 @@
+
+.cd2{
+    color: rgb(0, 4, 5);
+    
+    width: 300px;
+    position: relative;
+    left: 400px;
+    top: 40px;
+}
+.color{
+    color:skyblue;
+}
+
+.middle{
+    position: relative;
+    left:60px;
+}
+.boundary{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
