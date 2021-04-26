@@ -35,9 +35,9 @@ app.use('/api',test_routes)
 app.use('/api',summary_routes)
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('../client/build/build.js'))
+    app.use(express.static('../client/build/webpack.config.js'))
     app.get('*',(req,res)=>{
-        res.sendFile(path.resolve(__dirname, '..', 'client', 'build', 'build.js'))
+        res.sendFile(path.resolve(__dirname, '..', 'client', 'build', 'webpack.config.js'))
     })
 }
 
